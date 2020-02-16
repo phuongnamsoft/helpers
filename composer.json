@@ -1,0 +1,20 @@
+{
+    "name": "phuongnamsoft/helpers",
+    "type": "project",
+    "description": "Some helpers.",
+    "keywords": [
+        "helpers"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1.3"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "PNS\\Core\\Helpers\\": "src/"
+        }
+    }
+}
