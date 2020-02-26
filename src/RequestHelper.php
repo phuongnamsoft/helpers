@@ -7,15 +7,6 @@ class RequestHelper {
     const REQUEST_TIMEOUT = 300;
     const CONNECT_TIMEOUT = 300;
 
-    static $PROXY_LIST = array();
-
-    static function getRandomProxy() {
-        if (!empty(self::$PROXY_LIST)) {
-            return self::$PROXY_LIST[rand(0, count(self::$PROXY_LIST) - 1)];
-        }
-        return FALSE;
-    }
-
     static function checkCurl() {
         return function_exists('curl_init');
     }
